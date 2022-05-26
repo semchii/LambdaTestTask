@@ -5,8 +5,8 @@ from dots import dots
 class DotsTest(TestCase):
     def setUp(self):
         self.cases = [
-            ("abcd", ['abcd', 'abc.d', 'ab.cd', 'ab.c.d', 'a.bcd', 'a.bc.d', 'a.b.cd', 'a.b.c.d']),
-            ("abc", ['abc', 'ab.c', 'a.bc', 'a.b.c']),
+            ("abcd", ['abcd', 'a.bcd', 'ab.cd', 'a.b.cd', 'abc.d', 'a.bc.d', 'ab.c.d', 'a.b.c.d']),
+            ("abc", ['abc', 'a.bc', 'ab.c', 'a.b.c']),
             ("ab", ['ab', 'a.b']), ("", [])
         ]
 
